@@ -10,7 +10,11 @@ arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 45
 arrowRestSum(0); // => 0
 ***********************************************************************/
 
-"If you are seeing this you successfully pulled from the remote origin!"
+const arrowRestSum = (...rest) => {
+  return rest.reduce((accum, num) => {
+    return accum + num;
+  }, 0)
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -13,7 +13,27 @@ function returned by recVolume should continue to return the original volume.
 
 ***********************************************************************/
 
-// Your code here
+let recVolume = height => {
+  let i = 0;
+  let volume = height;
+  return num => {
+  i++;
+  if (i === 1) {
+    volume*= num;
+    return recVolume(height);
+  }
+  else if (i === 2) {
+    volume*= num;
+  }
+  return volume;
+  }
+}
+
+
+let func = recVolume(9);
+console.log(func(2));
+console.log(func(7));
+console.log(func(3));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

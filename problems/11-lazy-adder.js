@@ -1,7 +1,8 @@
 /***********************************************************************
 Write a function named: lazyAdder(firstNum). The lazyAdder function will
 accept a number and return a function. When the function returned by lazyAdder
-is invoked it will again accept a number, (secondNum), and then return a function.
+is invoked it will again accept a number, (secondNum), and then return a funct
+ion.
 When the last mentioned function is invoked with a number, (thirdNum), it will
 FINALLY return a number. See below for examples!
 
@@ -22,7 +23,7 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   fat-arrow function
 ***********************************************************************/
 
-// Your code here
+let lazyAdder = num1 => num2 => num3 => num1 + num2 + num3;
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
